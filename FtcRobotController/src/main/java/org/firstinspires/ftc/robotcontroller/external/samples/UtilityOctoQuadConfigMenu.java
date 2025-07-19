@@ -574,18 +574,15 @@ public class UtilityOctoQuadConfigMenu extends LinearOpMode
         public static class EnumOption extends OptionElement
         {
             protected int idx = 0;
-            /** @noinspection rawtypes*/
             protected Enum[] e;
             protected String name;
 
-            /** @noinspection rawtypes*/
             public EnumOption(String name, Enum[] e)
             {
                 this.e = e;
                 this.name = name;
             }
 
-            /** @noinspection rawtypes, rawtypes */
             public EnumOption(String name, Enum[] e, Enum def)
             {
                 this(name, e);
@@ -626,7 +623,6 @@ public class UtilityOctoQuadConfigMenu extends LinearOpMode
                 return String.format("%s: <font color='#e37c07' face=monospace>%s</font>", name, e[idx].name());
             }
 
-            /** @noinspection rawtypes*/
             public Enum getValue()
             {
                 return e[idx];
